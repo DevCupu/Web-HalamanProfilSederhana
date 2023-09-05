@@ -1,0 +1,134 @@
+*{
+  box-sizing: border-box;
+}
+body {
+    font-family: 'Quicksand' , sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .jumbotron{
+    background-color: rgb(156, 0, 0);
+    padding: 60px;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+  }
+  nav ul{
+    padding-inline: 4rem ;
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav li {
+    list-style-type: none;
+    
+  }
+
+  nav li a {
+    color: aliceblue;
+  }
+  nav li a:hover{
+    color: darkblue;
+  }
+
+  nav {
+    background-color: rgb(219, 52, 52);
+    padding: 5px;
+    position: sticky;
+    top: 0;
+  }
+  header{
+    display: inline;
+  }
+
+  header > p{
+    color: white;
+  }
+
+  h2, h3 {
+    color: #00a2c6;
+  }
+   
+  footer {
+    padding: 20px;
+    color: white;
+    background-color: rgb(219, 52, 52);
+  }
+
+  nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  nav a:hover{
+    font-weight: bold;
+  }
+
+  .profile {
+    text-align: center;
+  }
+
+  .featured-img{
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .profile-img{
+    width: 200px;
+  }
+
+  .card{
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    
+    padding: 30px;
+    margin-top: 10px;
+   
+  }
+
+  main{
+    padding: 40px;
+    
+    display: flex;
+    gap: 3rem;
+  }
+
+#content {
+   flex: 7;
+
+   display: flex;
+   flex-flow: column wrap;
+   gap: 1rem 2rem;
+  }
+
+  aside{
+  flex: 1;
+  }
+
+ 
+
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+
+  main aside{
+    align-self: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav ul{
+    justify-self: center;
+  }
+
+  main aside {
+    align-self: stretch;
+  }
+
+
+}
